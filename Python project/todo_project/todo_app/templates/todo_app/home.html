@@ -1,0 +1,17 @@
+{% extends 'todo_app/base.html' %}
+{% block content %}
+<h2>Your Tasks</h2>
+<a href="{% url 'create_task' %}" class="btn btn-primary">+ Add Task</a>
+<ul class="list-group mt-3">
+    {% for task in tasks %}
+    <li class="list-group-item">
+        <strong>{{ task.title }}</strong> - {{ task.description }}
+        {% if task.completed %}<span class="text-success">[Done]</span>{% endif %}
+        <div class="float-end">
+            <a href="{% url 'update_task' task.id %}" class="btn btn-sm btn-warning">Edit</a>
+            <a href="{% url 'delete_task' task.id %}" class="btn btn-sm btn-danger">Delete</a>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

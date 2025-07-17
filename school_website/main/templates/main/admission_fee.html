@@ -1,0 +1,116 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<header data-aos="fade-down">
+    <h1>Admission & Fee Structure</h1>
+    <p>Choose a class or course to view fees and apply instantly.</p>
+</header>
+
+<section style="max-width:1100px;margin:auto;padding:60px 20px" data-aos="fade-up">
+    <!-- Tabs -->
+    <div class="tab-wrapper" data-aos="zoom-in" data-aos-delay="200">
+        <button class="tab-btn active" data-target="schoolTab">School Grades</button>
+        <button class="tab-btn" data-target="courseTab">Other Courses</button>
+    </div>
+
+    <!-- School Grades Grid -->
+    <div id="schoolTab" class="grid" data-aos="fade-up">
+        <label class="card" data-class="Nursery"><input type="radio" name="choice">
+            <h3>Nursery</h3>
+            <div class="amount">₹10,000</div>
+            <p class="desc">Admission Fee</p>
+        </label>
+        <label class="card" data-class="KG"><input type="radio" name="choice">
+            <h3>KG</h3>
+            <div class="amount">₹12,000</div>
+            <p class="desc">Admission Fee</p>
+        </label>
+        <label class="card" data-class="Class 1-5"><input type="radio" name="choice">
+            <h3>Class 1 – 5</h3>
+            <div class="amount">₹15,000</div>
+            <p class="desc">Admission Fee</p>
+        </label>
+        <label class="card" data-class="Class 6-8"><input type="radio" name="choice">
+            <h3>Class 6 – 8</h3>
+            <div class="amount">₹18,000</div>
+            <p class="desc">Admission Fee</p>
+        </label>
+        <label class="card" data-class="Class 9-10"><input type="radio" name="choice">
+            <h3>Class 9 – 10</h3>
+            <div class="amount">₹20,000</div>
+            <p class="desc">Admission Fee</p>
+        </label>
+        <label class="card" data-class="Class 11-12"><input type="radio" name="choice">
+            <h3>Class 11 – 12</h3>
+            <div class="amount">₹25,000</div>
+            <p class="desc">Admission Fee</p>
+        </label>
+    </div>
+
+    <!-- Course Grid -->
+    <div id="courseTab" class="grid" style="display:none" data-aos="fade-up">
+        <label class="card" data-class="Software Development"><input type="radio" name="choice">
+            <h3>Software Dev</h3>
+            <div class="amount">₹50,000</div>
+            <p class="desc">Course Fee</p>
+        </label>
+        <label class="card" data-class="Data Science"><input type="radio" name="choice">
+            <h3>Data Science</h3>
+            <div class="amount">₹60,000</div>
+            <p class="desc">Course Fee</p>
+        </label>
+        <label class="card" data-class="Web Development"><input type="radio" name="choice">
+            <h3>Web Dev</h3>
+            <div class="amount">₹40,000</div>
+            <p class="desc">Course Fee</p>
+        </label>
+        <label class="card" data-class="AI & ML"><input type="radio" name="choice">
+            <h3>AI & ML</h3>
+            <div class="amount">₹70,000</div>
+            <p class="desc">Course Fee</p>
+        </label>
+        <label class="card" data-class="Cybersecurity"><input type="radio" name="choice">
+            <h3>Cybersecurity</h3>
+            <div class="amount">₹55,000</div>
+            <p class="desc">Course Fee</p>
+        </label>
+    </div>
+
+    <button id="applyBtn" data-aos="fade-up" data-aos-delay="400">Apply Now</button>
+</section>
+
+<!-- Join CTA -->
+<section class="join-cta" data-aos="fade-up">
+    <h2>Become a Part of Our Vibrant Community!</h2>
+    <p>Experience world‑class education, modern infrastructure, and holistic development at MySchool.</p>
+    <a href="#">Enquire Today</a>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 1000, once: true });
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const schoolTab = document.getElementById('schoolTab');
+    const courseTab = document.getElementById('courseTab');
+    tabBtns.forEach(btn => btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        if (btn.dataset.target === 'schoolTab') { schoolTab.style.display = 'grid'; courseTab.style.display = 'none'; }
+        else { courseTab.style.display = 'grid'; schoolTab.style.display = 'none'; }
+        document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+        applyBtn.style.display = 'none';
+    }));
+    const cards = document.querySelectorAll('.card');
+    const applyBtn = document.getElementById('applyBtn');
+    cards.forEach(card => card.addEventListener('click', () => {
+        cards.forEach(c => c.classList.remove('selected'));
+        card.classList.add('selected');
+        const name = card.dataset.class;
+        applyBtn.textContent = `Apply for ${name}`;
+        applyBtn.style.display = 'block';
+    }));
+</script>
+{% endblock %}

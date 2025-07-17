@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>School Website</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/contact.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fee.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/courses.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sign.css'%}">
+
+    <!-- in base.html -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="{% static 'js/school.js' %}" defer></script>
+    <link rel="stylesheet" href="{% static 'css/school.css' %}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+
+<body>
+    {% include 'main/navbar.html' %}
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div> 
+</body>
+
+</html>

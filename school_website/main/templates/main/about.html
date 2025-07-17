@@ -1,0 +1,69 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<header data-aos="fade-down">
+    <h1>About Our School</h1>
+    <p>Inspiring Excellence in Every Student</p>
+</header>
+
+<section data-aos="fade-up">
+    <h2 class="section-title">Who We Are</h2>
+    <div class="card">
+        <p>MySchool is dedicated to providing world-class education that nurtures young minds with knowledge, creativity, and values. Our experienced faculty and modern infrastructure prepare students to become confident global citizens.</p>
+    </div>
+</section>
+
+<section data-aos="fade-right">
+    <h2 class="section-title">Our Mission & Vision</h2>
+    <div class="grid two-col">
+        <div class="card">
+            <h3>Mission</h3>
+            <p>To empower students with holistic learning experiences that shape them into leaders and changemakers.</p>
+        </div>
+        <div class="card">
+            <h3>Vision</h3>
+            <p>To become a global education hub known for academic excellence, creativity, and innovation.</p>
+        </div>
+    </div>
+</section>
+
+<section class="values" data-aos="fade-left">
+    <h2 class="section-title">Core Values</h2>
+    <div class="grid two-col">
+        <div class="item">🌟 Excellence</div>
+        <div class="item">💡 Innovation</div>
+        <div class="item">🤝 Integrity</div>
+        <div class="item">🌍 Diversity</div>
+        <div class="item">📚 Lifelong Learning</div>
+        <div class="item">🎯 Responsibility</div>
+    </div>
+</section>
+
+<section class="features" data-aos="fade-up">
+    <h2 class="section-title">Why Choose Us</h2>
+    <div class="grid two-col">
+        <div class="item">🎓 Expert Faculty</div>
+        <div class="item">🏫 Modern Infrastructure</div>
+        <div class="item">⚽ Co-Curricular Excellence</div>
+        <div class="item">🧠 Critical Thinking</div>
+        <div class="item">📖 Research & Innovation</div>
+        <div class="item">🛡️ Safe Environment</div>
+    </div>
+</section>
+
+<section class="cta" data-aos="zoom-in">
+    <h3>Ready to Join Us?</h3>
+    <p>Be part of a school that believes in your potential. Apply now and shape your future with us.</p>
+    <a href="#">Apply Now</a>
+</section>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+{% endblock %}

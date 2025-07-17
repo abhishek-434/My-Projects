@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+
+
+    <div class="row">
+        <div class="col-12">
+            <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    {% for offer in offers %}
+                    <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                        <a href="{{ offer.link }}">
+                            <img src="{{ offer.image.url }}" class="d-block w-100" alt="{{ offer.title }}">
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#offerCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#offerCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="mt-4">Categories</h4>
+    <div class="row">
+        {% for category in categories %}
+        <div class="col-md-2 text-center">
+            <img src="{{ category.image.url }}" class="img-fluid rounded-circle" width="80" height="80">
+            <p>{{ category.name }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h4 class="mt-4">Best of Electronics</h4>
+    <div class="row">
+        {% for product in products %}
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text">₹{{ product.price }}</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+{% endblock %}

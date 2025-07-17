@@ -1,0 +1,27 @@
+{% load static %}
+<nav class="navbar">
+    <div class="logo">
+        <a href="{% url 'home' %}">
+            <img src="{% static 'images/logo.png' %}" alt="School Logo" class="logo-img">
+            My School
+        </a>
+    </div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+    <ul class="nav-links">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'admission_fee' %}">Admission Fee</a></li>
+        <li><a href="{% url 'courses' %}">Courses</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li class="mobile-btn"><a href="{% url 'login' %}">Login</a></li>
+        <li class="mobile-btn"><a href="{% url 'signup' %}">Sign Up</a></li>
+    </ul>
+
+    <div class="login-signup desktop-btn">
+        <a href="{% url 'login' %}" class="btn">Login</a>
+        <a href="{% url 'signup' %}" class="btn signup">Sign Up</a>
+    </div>
+</nav>

@@ -1,0 +1,145 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Welcome to Our School</h1>
+    <p>Providing quality education for all.</p>
+    <img src="{% static 'images/school.jpg' %}" alt="School Building">
+</div>
+
+<!-- About Us -->
+<div class="about-section">
+    <div class="about">
+        <h2 class="section-title">About Our School</h2>
+        <p>Our school is dedicated to nurturing young minds with excellent faculty and a conducive learning environment.
+        </p>
+        <p>We provide state-of-the-art facilities, extracurricular activities, and a curriculum designed to empower
+            students for a bright future.</p>
+    </div>
+
+    <div class="mission-vision">
+        <h2 class="section-title">Our Mission & Vision</h2>
+        <p><strong>Mission:</strong> To cultivate a learning environment that fosters creativity, knowledge, and
+            leadership in every student.</p>
+        <p><strong>Vision:</strong> To be a globally recognized institution known for academic excellence, innovation,
+            and holistic development.</p>
+    </div>
+</div>
+
+
+<!-- Achievements -->
+<h2 class="section-title">Our Achievements</h2>
+<div class="events">
+    <div class="event">
+        <h3>🏅 Best School Award</h3>
+        <p>Recognized as the Best CBSE School in 2024 by National Education Forum.</p>
+    </div>
+    <div class="event">
+        <h3>📚 100% Board Results</h3>
+        <p>Our students achieved 100% pass rate in the board exams for 3 consecutive years.</p>
+    </div>
+</div>
+
+<!-- Facilities -->
+<h2 class="section-title">Our Facilities</h2>
+<div class="activities">
+    <ul>
+        <li>🖥️ Smart Classrooms</li>
+        <li>⚗️ Fully Equipped Labs</li>
+        <li>📚 Digital Library</li>
+        <li>🏋️ Gym & Sports Complex</li>
+        <li>🩺 Medical Room</li>
+        <li>🎓 Career Counseling Cell</li>
+    </ul>
+</div>
+
+<!-- Faculty -->
+<div class="faculty-section">
+    <h2 class="section-title">Meet Our Faculty</h2>
+    <p>We have a team of highly qualified and experienced teachers dedicated to providing the best education.</p>
+    <p>Our faculty members are passionate about mentoring students and guiding them to success.</p>
+</div>
+
+
+<!-- Activities -->
+<h2 class="section-title">Our School Activities</h2>
+<section class="activities">
+    <ul>
+        <li>🏆 Sports Competitions</li>
+        <li>🎨 Science and Art Exhibitions</li>
+        <li>🎭 Annual Cultural Programs</li>
+        <li>🗣️ Debates and Public Speaking Events</li>
+        <li>🚌 Educational Field Trips</li>
+        <li>📖 Academic Workshops & Seminars</li>
+        <li>💡 Innovation & Tech Projects</li>
+        <li>🌱 Community Service Programs</li>
+    </ul>
+</section>
+
+<!-- Gallery -->
+<h2 class="section-title">Glimpses of Our School</h2>
+<div class="gallery">
+    <img src="{% static 'images/Sports Event.jpg' %}" alt="Sports Event">
+    <img src="{% static 'images/Exhibition.jpg' %}" alt="Science Exhibition">
+    <img src="{% static 'images/Cultural Program.jpg' %}" alt="Cultural Program">
+    <img src="{% static 'images/Debate.jpg' %}" alt="Debate">
+    <img src="{% static 'images/trip.jpg' %}" alt="Field Trip">
+    <img src="{% static 'images/Community.jpg' %}" alt="Community">
+</div>
+
+<!-- Upcoming Events -->
+<h2 class="section-title">Upcoming Events</h2>
+<div class="events">
+    <div class="event">
+        <h3>Annual Sports Day 🏅</h3>
+        <p><strong>Date:</strong> March 15, 2025</p>
+        <p>Join us for an exciting day filled with competitions, fun activities, and awards!</p>
+    </div>
+    <div class="event">
+        <h3>Science Fair & Exhibition 🔬</h3>
+        <p><strong>Date:</strong> April 10, 2025</p>
+        <p>Explore innovative projects by students and experience hands-on learning.</p>
+    </div>
+    <div class="event">
+        <h3>Annual Cultural Fest 🎭</h3>
+        <p><strong>Date:</strong> May 5, 2025</p>
+        <p>A showcase of music, dance, drama, and diverse cultural performances.</p>
+    </div>
+</div>
+
+<!-- Testimonials -->
+<h2 class="section-title">What Our Students Say</h2>
+<div class="testimonials">
+    <div class="testimonial">
+        <p>"This school has given me endless opportunities to grow and excel. The teachers are supportive, and the
+            activities keep learning fun!"</p>
+        <h4>- Aisha Khan, Grade 10</h4>
+    </div>
+    <div class="testimonial">
+        <p>"I love the hands-on learning approach and the encouragement we receive for innovation and creativity!"</p>
+        <h4>- Rahul Sharma, Grade 12</h4>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="cta-section text-center">
+    <div class="container">
+        <h2 class="cta-title">Join Our School Today!</h2>
+        <p class="cta-subtext">Give your child the best education and an environment that fosters growth.</p>
+        <a href="{% url 'admission_fee' %}" class="btn btn-cta">Apply Now</a>
+    </div>
+</div>
+
+
+<!-- Contact Section -->
+<h2 class="section-title">Contact Us</h2>
+<div class="faculty">
+    <p><strong>Address:</strong> 123 Green Lane, Learning City, India</p>
+    <p><strong>Email:</strong> contact@ourschool.edu.in</p>
+    <p><strong>Phone:</strong> +91-9876543210</p>
+    <a href="{% url 'contact' %}" class="btn btn-primary mt-2">Reach Out</a>
+</div>
+
+{% endblock %}
