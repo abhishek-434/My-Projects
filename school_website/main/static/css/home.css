@@ -3,7 +3,8 @@
 .hero {
   padding: 60px 20px;
   text-align: center;
-  background: linear-gradient(to right, #004080, #accae7); /* 🔁 You can use any color here */
+  background: linear-gradient(to right, #004080, #accae7);
+  /* 🔁 You can use any color here */
   color: white;
 }
 
@@ -53,6 +54,60 @@
   color: #1a1a1a;
 }
 
+/* Leadership Message Section */
+.leadership-message {
+  background: linear-gradient(135deg, #f0f8ff, #e6f0ff);
+  color: #333;
+  border-top: 5px solid #007bff;
+  border-bottom: 5px solid #007bff;
+}
+
+.leadership-message .section-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.leadership-message p.lead {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.leadership-message strong {
+  color: #007bff;
+  font-size: 1.1rem;
+}
+
+/* Infrastructure Section */
+.infrastructure {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.infrastructure .section-title {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.infrastructure ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+}
+
+.infrastructure ul li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.infrastructure ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
 
 .section-title {
   text-align: center;
@@ -75,8 +130,41 @@
   padding: 15px 20px;
   border-radius: 8px;
   font-weight: 500;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Partners & Accreditations Section */
+.partners {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.partners .section-title {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.partners .row {
+  justify-content: center;
+  align-items: center;
+}
+
+.partners img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.partners img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.3);
+}
+
 
 .gallery {
   display: grid;
@@ -92,7 +180,7 @@
   height: 200px;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -100,20 +188,147 @@
   transform: scale(1.05);
 }
 
+/* Section Title Shared Style */
+.section-title {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
 
-.events, .testimonials {
+/* Student Clubs Section */
+.student-clubs h4 {
+  font-size: 1.25rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.student-clubs p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Why Choose Us Section */
+.why-choose-us .fa-2x {
+  transition: transform 0.3s ease-in-out;
+}
+
+.why-choose-us .fa-2x:hover {
+  transform: scale(1.2);
+}
+
+.why-choose-us h4 {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #343a40;
+}
+
+.why-choose-us p {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+/* Newsletter Subscription Section */
+.newsletter {
+  background: #f0f8ff;
+  border-top: 4px solid #007bff;
+  border-bottom: 4px solid #007bff;
+}
+
+.newsletter p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter input.form-control {
+  height: 45px;
+  border-radius: 0.375rem;
+}
+
+.newsletter button.btn {
+  height: 45px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s;
+}
+
+.newsletter button.btn:hover {
+  background-color: #0056b3;
+}
+
+
+.events,
+.testimonials {
   padding: 20px;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.event, .testimonial {
+.event,
+.testimonial {
   background: #f9f9f9;
   padding: 15px;
   border-left: 5px solid #007bff;
   border-radius: 8px;
 }
+
+/* Top Alumni Section */
+.top-alumni {
+  background-color: #f9f9f9;
+}
+
+.top-alumni .blockquote {
+  border-left: 5px solid #007bff;
+  padding-left: 1.25rem;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.top-alumni .blockquote-footer {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+/* FAQ Section */
+.faq-section {
+  background-color: #eef7ff;
+  border-top: 4px solid #007bff;
+}
+
+.faq-section .accordion-button {
+  background-color: #ffffff;
+  color: #007bff;
+  font-weight: 500;
+  border: none;
+  box-shadow: none;
+  transition: background-color 0.3s ease;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  background-color: #d0e7ff;
+  color: #004a99;
+}
+
+.faq-section .accordion-body {
+  background-color: #fff;
+  color: #333;
+  font-size: 0.95rem;
+  padding: 1rem;
+}
+
+.faq-section .accordion-item {
+  border: none;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
 
 .cta-section {
   background: linear-gradient(to right, #4facfe, #00f2fe);
@@ -191,9 +406,9 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
