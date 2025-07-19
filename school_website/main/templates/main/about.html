@@ -2,68 +2,246 @@
 {% load static %}
 
 {% block content %}
-
-<header data-aos="fade-down">
-    <h1>About Our School</h1>
-    <p>Inspiring Excellence in Every Student</p>
+<!-- Header -->
+<header class="bg-primary text-white text-center py-5" data-aos="fade-down">
+    <div class="container">
+        <h1 class="display-4">About Our School</h1>
+        <p class="lead">Inspiring Excellence in Every Student</p>
+    </div>
 </header>
 
-<section data-aos="fade-up">
-    <h2 class="section-title">Who We Are</h2>
-    <div class="card">
-        <p>MySchool is dedicated to providing world-class education that nurtures young minds with knowledge, creativity, and values. Our experienced faculty and modern infrastructure prepare students to become confident global citizens.</p>
-    </div>
-</section>
-
-<section data-aos="fade-right">
-    <h2 class="section-title">Our Mission & Vision</h2>
-    <div class="grid two-col">
-        <div class="card">
-            <h3>Mission</h3>
-            <p>To empower students with holistic learning experiences that shape them into leaders and changemakers.</p>
-        </div>
-        <div class="card">
-            <h3>Vision</h3>
-            <p>To become a global education hub known for academic excellence, creativity, and innovation.</p>
+<!-- Who We Are -->
+<section class="py-5" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Who We Are</h2>
+        <div class="card shadow-lg p-4">
+            <p class="text-center">MySchool is dedicated to providing world-class education that nurtures young minds
+                with knowledge, creativity, and values. Our experienced faculty and modern infrastructure prepare
+                students to become confident global citizens.</p>
         </div>
     </div>
 </section>
 
-<section class="values" data-aos="fade-left">
-    <h2 class="section-title">Core Values</h2>
-    <div class="grid two-col">
-        <div class="item">🌟 Excellence</div>
-        <div class="item">💡 Innovation</div>
-        <div class="item">🤝 Integrity</div>
-        <div class="item">🌍 Diversity</div>
-        <div class="item">📚 Lifelong Learning</div>
-        <div class="item">🎯 Responsibility</div>
+<!-- Our Mission & Vision -->
+<section class="py-5 bg-light" data-aos="fade-right">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Our Mission & Vision</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm h-100">
+                    <h3 class="text-primary">Mission</h3>
+                    <p>To empower students with holistic learning experiences that shape them into leaders and
+                        changemakers.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm h-100">
+                    <h3 class="text-success">Vision</h3>
+                    <p>To become a global education hub known for academic excellence, creativity, and innovation.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="features" data-aos="fade-up">
-    <h2 class="section-title">Why Choose Us</h2>
-    <div class="grid two-col">
-        <div class="item">🎓 Expert Faculty</div>
-        <div class="item">🏫 Modern Infrastructure</div>
-        <div class="item">⚽ Co-Curricular Excellence</div>
-        <div class="item">🧠 Critical Thinking</div>
-        <div class="item">📖 Research & Innovation</div>
-        <div class="item">🛡️ Safe Environment</div>
+<!-- Our History -->
+<section class="py-5" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Our History</h2>
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <img src="https://via.placeholder.com/500x300" class="img-fluid rounded shadow" alt="School History">
+            </div>
+            <div class="col-lg-6">
+                <p>Founded in 1995, MySchool started as a small initiative with a big dream. Over the decades, we have
+                    grown into a reputed institution offering world-class education with a focus on innovation,
+                    inclusivity, and integrity.</p>
+                <p>With each passing year, we’ve introduced new programs, expanded our campus, and modernized our
+                    classrooms to keep up with global standards.</p>
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="cta" data-aos="zoom-in">
-    <h3>Ready to Join Us?</h3>
-    <p>Be part of a school that believes in your potential. Apply now and shape your future with us.</p>
-    <a href="#">Apply Now</a>
+<!-- Timeline -->
+<section class="py-5 bg-light" data-aos="zoom-in">
+    <div class="container">
+        <h2 class="section-title text-center text-primary fw-bold mb-5">Milestones</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="timeline position-relative ps-4 border-start border-3 border-primary">
+                    <div class="milestone mb-4 position-relative">
+                        <div class="year fw-bold text-primary">1995</div>
+                        <div class="desc">School established with 50 students and 5 teachers.</div>
+                    </div>
+                    <div class="milestone mb-4 position-relative">
+                        <div class="year fw-bold text-primary">2005</div>
+                        <div class="desc">Introduced Computer Education and Science Labs.</div>
+                    </div>
+                    <div class="milestone mb-4 position-relative">
+                        <div class="year fw-bold text-primary">2010</div>
+                        <div class="desc">Became an award-winning institution for holistic education.</div>
+                    </div>
+                    <div class="milestone mb-4 position-relative">
+                        <div class="year fw-bold text-primary">2018</div>
+                        <div class="desc">Smart classrooms and e-learning modules introduced.</div>
+                    </div>
+                    <div class="milestone mb-4 position-relative">
+                        <div class="year fw-bold text-primary">2023</div>
+                        <div class="desc">Opened our second campus and expanded sports facilities.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-</script>
 
+<!-- Core Values -->
+<section class="py-5 text-center bg-light" data-aos="fade-left">
+    <div class="container">
+        <h2 class="section-title mb-5 fw-bold text-primary">Core Values</h2>
+        <div class="row justify-content-center g-4">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                <div
+                    class="value-box shadow-sm rounded-4 p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                    🌟 <span class="ms-2">Excellence</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                <div
+                    class="value-box shadow-sm rounded-4 p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                    💡 <span class="ms-2">Innovation</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                <div
+                    class="value-box shadow-sm rounded-4 p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                    🤝 <span class="ms-2">Integrity</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                <div
+                    class="value-box shadow-sm rounded-4 p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                    🌍 <span class="ms-2">Diversity</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                <div
+                    class="value-box shadow-sm rounded-4 p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                    📚 <span class="ms-2 text-center">Lifelong<br>Learning</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                <div
+                    class="value-box shadow-sm rounded-4 p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                    🎯 <span class="ms-2">Responsibility</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Why Choose Us -->
+<section class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Why Choose Us</h2>
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm">🎓 Expert Faculty</div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm">🏫 Modern Infrastructure</div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm">⚽ Co-Curricular Excellence</div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm">🧠 Critical Thinking</div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm">📖 Research & Innovation</div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm">🛡️ Safe Environment</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Leadership Team -->
+<section class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">
+            <span class="text-primary border-bottom border-3 pb-2">Leadership Team</span>
+        </h2>
+
+        <div class="row g-4 text-center">
+            <!-- Principal -->
+            <div class="col-md-4">
+                <div class="card team-card p-4 h-100 shadow-sm">
+                    <img src="https://ui-avatars.com/api/?name=Neeta+Verma&background=0d6efd&color=fff&rounded=true&size=100"
+                        class="rounded-circle mx-auto mb-3" width="100" height="100" alt="Principal">
+
+                    <h5 class="mb-1">Dr. Neeta Verma</h5>
+                    <p class="text-muted">Principal</p>
+                </div>
+            </div>
+
+            <!-- Vice Principal -->
+            <div class="col-md-4">
+                <div class="card team-card p-4 h-100 shadow-sm">
+                    <img src="https://ui-avatars.com/api/?name=Rakesh+Mehta&background=0d6efd&color=fff&rounded=true&size=100"
+                        class="rounded-circle mx-auto mb-3" width="100" height="100" alt="Principal">
+                    <h5 class="mb-1">Mr. Rakesh Mehta</h5>
+                    <p class="text-muted">Vice Principal</p>
+                </div>
+            </div>
+
+            <!-- Academic Head -->
+            <div class="col-md-4">
+                <div class="card team-card p-4 h-100 shadow-sm">
+                    <img src="https://ui-avatars.com/api/?name=Neha+Jain&background=0d6efd&color=fff&rounded=true&size=100"
+                        class="rounded-circle mx-auto mb-3" width="100" height="100" alt="Principal">
+                    <h5 class="mb-1">Dr. Neha Jain</h5>
+                    <p class="text-muted">Academic Head</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Testimonials -->
+<section class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">What Parents Say</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card p-3 shadow-sm">
+                    <p>"MySchool has completely transformed my child. He has become more confident and curious than
+                        ever."</p>
+                    <h6 class="text-end">— Anjali Verma</h6>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3 shadow-sm">
+                    <p>"The teachers are very supportive and the activities help in all-round development."</p>
+                    <h6 class="text-end">— Rajesh Kumar</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 text-center" data-aos="zoom-in">
+    <div class="container">
+        <h3 class="mb-3">Ready to Join Us?</h3>
+        <p class="mb-4">Be part of a school that believes in your potential. Apply now and shape your future with us.
+        </p>
+        <a href="#" class="btn btn-primary px-4 py-2">Apply Now</a>
+    </div>
+</section>
 {% endblock %}

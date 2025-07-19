@@ -1,109 +1,118 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* General Styling */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 2rem;
+    position: relative;
+}
+
+.team-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    object-fit: cover;
+    border: 3px solid #0d6efd;
+}
+
+.value-box {
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.value-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2rem;
+}
+
+
+/* Timeline Styling */
+.timeline .milestone::before {
+    content: "";
+    position: absolute;
+    left: -1.15rem;
+    top: 0.35rem;
+    width: 14px;
+    height: 14px;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #0d6efd;
+}
+
+.timeline .milestone {
+    padding-left: 1.5rem;
+}
+
+.year {
+    font-size: 1.1rem;
+}
+
+.desc {
+    font-size: 1rem;
     color: #333;
-    line-height: 1.6;
 }
 
-header {
-    background: linear-gradient(135deg, #2980b9, #2c3e50);
-    color: white;
-    text-align: center;
-    padding: 80px 20px 60px;
+
+/* Value Box */
+.value-box {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+.value-box:hover {
+    transform: scale(1.05);
+    background-color: #eaf4ff;
 }
 
-header p {
-    font-size: 1.2rem;
-}
-
-section {
-    padding: 60px 20px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-h2.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #2c3e50;
-}
-
-.grid {
-    display: grid;
-    gap: 20px;
-}
-
-.two-col {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
+/* Cards */
 .card {
-    background: white;
-    border-radius: 10px;
-    padding: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s;
+    border: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
-.values .item,
-.features .item {
-    background: #ecf0f1;
-    padding: 15px 20px;
-    border-radius: 8px;
-    text-align: center;
-    font-weight: 500;
+/* Call-to-action */
+.btn-primary {
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 50px;
 }
 
-.cta {
-    background-color: #2980b9;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.cta h3 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.cta a {
-    display: inline-block;
-    background: white;
-    color: #2980b9;
-    padding: 12px 25px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.cta a:hover {
-    background-color: #2c3e50;
-    color: white;
-}
-
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2rem;
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
     }
 
-    .cta h3 {
-        font-size: 1.5rem;
+    .timeline {
+        border-left: 3px solid #007bff;
+        margin-left: 15px;
+    }
+
+    .timeline li::before {
+        width: 12px;
+        height: 12px;
     }
 }
