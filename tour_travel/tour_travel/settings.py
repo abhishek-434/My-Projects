@@ -26,7 +26,15 @@ SECRET_KEY = 'django-insecure-d996ds(nn%dq=1i*t*oi+a0^nj-=g&pejeo+w3-da6voxup@()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['"wanderlusttravel-khh4.onrender.com"']
+ALLOWED_HOSTS = [
+    "wanderlusttravel-khh4.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://wanderlusttravel-khh4.onrender.com",
+]
 
 
 # Application definition
