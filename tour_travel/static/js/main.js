@@ -5,25 +5,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     'use strict';
 
-    // ==========================================
-    // Preloader Fade Out
-    // ==========================================
-    const preloader = document.querySelector('.preloader');
-    if (preloader) {
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                preloader.classList.add('fade-out');
-            }, 600); // Small delay for elegant visual effect
-        });
-        
-        // Safety timeout in case load event takes too long
-        setTimeout(function() {
-            if (!preloader.classList.contains('fade-out')) {
-                preloader.classList.add('fade-out');
-            }
-        }, 3000);
-    }
-    
+
     // ==========================================
     // Sticky Transparent Navbar
     // ==========================================

@@ -1,0 +1,5 @@
+tour_travel/db.sqlite3
+tour_travel/download_media.py
+tour_travel/manage.py
+tour_travel/seed_data.py
+tour_travel\media
