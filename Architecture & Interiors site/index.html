@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>ATELIER — Architecture & Interiors | Contemporary Luxury Architecture</title>
+
+  <!-- SEO & Social Metadata -->
+  <meta name="description"
+    content="ATELIER is a contemporary architecture and interior design studio crafting timeless spaces beyond the ordinary. Explore our selected portfolio and interactive 3D villa.">
+  <meta name="keywords"
+    content="architecture, interior design, luxury villa, contemporary architecture, architectural visualization, minimalist home, sustainable design">
+  <meta name="author" content="ATELIER Architecture & Interiors">
+  <meta property="og:title" content="ATELIER — Architecture & Interiors">
+  <meta property="og:description"
+    content="Cinematic luxury, contemporary architecture, and quiet editorial minimalism.">
+  <meta property="og:image" content="assets/images/hero-villa.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#202321">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Clean Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-theme="dark">
+
+  <!-- Skip Link for Accessibility -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Custom Cinematic Cursor (Desktop) -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <span class="cursor-text">EXPLORE</span>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-link" aria-label="ATELIER Home">
+        <span class="brand-name">ATELIER</span>
+        <span class="brand-sub">ARCHITECTURE & INTERIORS</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active"><span>Home</span></a></li>
+          <li><a href="#about" class="nav-link"><span>About</span></a></li>
+          <li><a href="#projects" class="nav-link"><span>Projects</span></a></li>
+          <li><a href="#interiors" class="nav-link"><span>Interiors</span></a></li>
+          <li><a href="#studio" class="nav-link"><span>Studio</span></a></li>
+          <li><a href="#contact" class="nav-link"><span>Contact</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-outline header-cta" id="headerCtaBtn">
+          <span>Get in Touch</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="mobileDrawer">
+          <span class="hamburger-box">
+            <span class="hamburger-line line-1"></span>
+            <span class="hamburger-line line-2"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <div class="drawer-brand">
+          <span class="brand-name">ATELIER</span>
+          <span class="brand-sub">ARCHITECTURE & INTERIORS</span>
+        </div>
+        <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+          <span>&times;</span>
+        </button>
+      </div>
+      <nav class="drawer-nav" aria-label="Mobile Navigation">
+        <ul class="drawer-links">
+          <li><a href="#hero" class="drawer-link"><span class="drawer-num">01</span><span>Home</span></a></li>
+          <li><a href="#about" class="drawer-link"><span class="drawer-num">02</span><span>Philosophy</span></a></li>
+          <li><a href="#projects" class="drawer-link"><span class="drawer-num">03</span><span>Projects</span></a></li>
+          <li><a href="#interactive-3d" class="drawer-link"><span class="drawer-num">04</span><span>Interactive
+                3D</span></a></li>
+          <li><a href="#interiors" class="drawer-link"><span class="drawer-num">05</span><span>Interiors</span></a></li>
+          <li><a href="#studio" class="drawer-link"><span class="drawer-num">06</span><span>Studio Practice</span></a>
+          </li>
+          <li><a href="#contact" class="drawer-link"><span class="drawer-num">07</span><span>Contact</span></a></li>
+        </ul>
+      </nav>
+      <div class="drawer-footer">
+        <div class="drawer-meta">
+          <span class="meta-label">Direct Inquiries</span>
+          <a href="mailto:inquiries@atelier-architects.com" class="meta-val">inquiries@atelier-architects.com</a>
+        </div>
+        <div class="drawer-meta">
+          <span class="meta-label">Offices</span>
+          <p class="meta-val">Zurich &bull; New York &bull; Kyoto</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ================================================================= -->
+    <!-- 4. CINEMATIC HERO SECTION -->
+    <!-- ================================================================= -->
+    <section class="hero-section" id="hero" aria-label="Hero Overview">
+      <!-- Background Visual with Parallax Container -->
+      <div class="hero-bg-wrapper">
+        <img src="assets/images/hero-villa.jpg"
+          alt="Contemporary luxury architectural villa with concrete volumes and pool at golden hour"
+          class="hero-bg-image" id="heroBgImg">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <!-- Hero Main Content -->
+      <div class="hero-content container">
+        <div class="hero-header-meta">
+          <div class="hero-eyebrow-wrapper">
+            <span class="hero-eyebrow" id="heroEyebrow">DESIGNING A BETTER TOMORROW</span>
+          </div>
+          <div class="hero-studio-tag" id="heroStudioTag">
+            <span>EST. 2006 &bull; RESIDENTIAL & CULTURAL MONOGRAPHS</span>
+          </div>
+        </div>
+
+        <h1 class="hero-title" id="heroTitle">
+          <span class="title-line"><span class="line-inner">SPACES</span></span>
+          <span class="title-line"><span class="line-inner">BEYOND</span></span>
+          <span class="title-line"><span class="line-inner gold-accent">THE ORDINARY.</span></span>
+        </h1>
+
+        <div class="hero-bottom-grid">
+          <div class="hero-description-col">
+            <p class="hero-description" id="heroDesc">
+              We craft architectural spaces and interiors that inspire, balance and elevate the way you live. Every
+              volume is sculpted to celebrate light, quiet luxury, and the raw poetry of landscape.
+            </p>
+            <div class="hero-actions" id="heroActions">
+              <a href="#projects" class="btn btn-primary">
+                <span>Discover Our Work</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#interactive-3d" class="btn btn-ghost">
+                <span>Explore in 3D</span>
+                <span class="btn-dot"></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Index & Circular 3D Trigger Badge -->
+          <div class="hero-meta-col" id="heroMetaCol">
+            <div class="hero-project-preview">
+              <div class="project-pill">
+                <span class="pill-dot"></span>
+                <span class="pill-text">FEATURED WORK &bull; 01 / 04</span>
+              </div>
+              <h3 class="preview-title">The Stillwater Residence</h3>
+              <p class="preview-location">Lake Tahoe, California</p>
+            </div>
+
+            <!-- Circular Interactive 3D Badge -->
+            <a href="#interactive-3d" class="circular-3d-badge" aria-label="Jump to interactive 3D villa model">
+              <div class="badge-ring">
+                <svg viewBox="0 0 100 100" class="badge-svg">
+                  <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                  <text class="badge-text">
+                    <textPath xlink:href="#circlePath" startOffset="0%">
+                      EXPLORE IN 3D &bull; DRAG TO ROTATE &bull;
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+              <div class="badge-center">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="hero-scroll-indicator" id="heroScrollIndicator">
+          <span class="scroll-label">SCROLL TO DISCOVER</span>
+          <div class="scroll-line">
+            <span class="scroll-dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 5. PINNED STORYTELLING / MANIFESTO (ScrollTrigger Effect C) -->
+    <!-- ================================================================= -->
+    <section class="story-pinned-section" id="storyPinned" aria-label="Design Principles Narrative">
+      <div class="pinned-container">
+        <!-- Pinned Left Visual Stage -->
+        <div class="pinned-visual">
+          <div class="visual-card active" data-step="1">
+            <img src="assets/images/about-architecture.jpg"
+              alt="Architectural volume framing daylight and natural surroundings" class="visual-img">
+            <div class="visual-overlay"></div>
+            <div class="visual-tag">CHAPTER 01 &bull; LIGHT AS A SCULPTURAL MEDIUM</div>
+          </div>
+          <div class="visual-card" data-step="2">
+            <img src="assets/images/interior-detail-1.jpg"
+              alt="Minimalist interior architectural joinery and natural materials" class="visual-img">
+            <div class="visual-overlay"></div>
+            <div class="visual-tag">CHAPTER 02 &bull; TECTONIC HONESTY</div>
+          </div>
+          <div class="visual-card" data-step="3">
+            <img src="assets/images/project-3-courtyard.jpg"
+              alt="Mediterranean stone courtyard seamlessly connecting interior and exterior" class="visual-img">
+            <div class="visual-overlay"></div>
+            <div class="visual-tag">CHAPTER 03 &bull; DIALOGUE WITH THE SITE</div>
+          </div>
+        </div>
+
+        <!-- Right Scrolling Text Content -->
+        <div class="pinned-content">
+          <div class="story-step" data-step="1">
+            <span class="step-num">01 / 03</span>
+            <h2 class="step-title">Form follows stillness.</h2>
+            <p class="step-body">
+              Before sketching a single wall, we study the sun’s trajectory across the topography. True architecture
+              does not impose upon nature; it gathers light, shadows, and breezes to cultivate an atmosphere of profound
+              serenity.
+            </p>
+            <div class="step-meta">NATURAL LIGHTING &bull; THERMAL HARMONY</div>
+          </div>
+
+          <div class="story-step" data-step="2">
+            <span class="step-num">02 / 03</span>
+            <h2 class="step-title">Materiality that ages with grace.</h2>
+            <p class="step-body">
+              We reject transient novelties in favor of tactile honesty. Board-marked concrete, bush-hammered limestone,
+              hand-rubbed smoked oak, and cast bronze develop a noble patina over generations, deepening the house’s
+              emotional presence.
+            </p>
+            <div class="step-meta">ENDURING TACTILITY &bull; LOCAL CRAFTSMANSHIP</div>
+          </div>
+
+          <div class="story-step" data-step="3">
+            <span class="step-num">03 / 03</span>
+            <h2 class="step-title">Living between inside and sky.</h2>
+            <p class="step-body">
+              By dissolving traditional barriers with continuous ground planes, frameless motorized glazing, and
+              tranquil courtyards, our residences feel limitless—rooted in the earth yet open to the changing seasons.
+            </p>
+            <div class="step-meta">CONTINUOUS BOUNDARIES &bull; TRANQUIL DWELLING</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 6. ABOUT AND PHILOSOPHY SECTION -->
+    <!-- ================================================================= -->
+    <section class="about-section light-theme" id="about" aria-label="Studio Philosophy">
+      <div class="container">
+        <div class="about-editorial-grid">
+          <div class="about-col-left">
+            <span class="section-eyebrow">PHILOSOPHICAL ANCHOR</span>
+            <h2 class="about-headline">
+              Architecture is more than a structure. It is a feeling.
+            </h2>
+          </div>
+          <div class="about-col-right">
+            <p class="lead-paragraph">
+              Founded on the belief that environment dictates wellbeing, ATELIER bridges visionary architecture with
+              bespoke interior architecture. We conceive each commission as a singular holistic artwork.
+            </p>
+            <p class="body-paragraph">
+              From cliffside pavilions perched over maritime horizons to secluded alpine sanctuaries, our design method
+              begins with exhaustive site listening. We balance bold geometric cantilevers with intimate, human-scale
+              sanctuaries where daylight paints silent poetry.
+            </p>
+            <div class="about-action">
+              <a href="#studio" class="inline-editorial-link">
+                <span>Read Studio Philosophy &bull; Our Four Principles</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Full-Width Parallax Architectural Showcase -->
+        <div class="about-image-showcase parallax-box">
+          <div class="image-wrapper">
+            <img src="assets/images/about-architecture.jpg"
+              alt="Minimalist concrete and glass architecture framed by native forest" class="parallax-img"
+              data-speed="0.15">
+          </div>
+          <div class="image-caption-bar">
+            <span class="caption-index">FIG. 01</span>
+            <span class="caption-title">Villa Serena &bull; The interplay of board-formed concrete and native fir
+              trees</span>
+            <span class="caption-loc">Lake Lucerne, Switzerland</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 7. SELECTED PROJECTS SECTION (Horizontal Scroll on Desktop) -->
+    <!-- ================================================================= -->
+    <section class="projects-section" id="projects" aria-label="Selected Projects Portfolio">
+      <div class="projects-header container">
+        <div class="section-title-wrap">
+          <span class="section-eyebrow gold-accent">PORTFOLIO &bull; 2022 — 2025</span>
+          <h2 class="section-title">Selected Projects</h2>
+        </div>
+        <p class="projects-header-desc">
+          A curated selection of private residences, coastal pavilions, and architectural retreats designed with rigor,
+          patience, and unyielding craft.
+        </p>
+      </div>
+
+      <!-- Horizontal Gallery Wrapper (GSAP pinned on desktop) -->
+      <div class="horizontal-scroll-container" id="horizontalGalleryContainer">
+        <div class="horizontal-track" id="horizontalTrack">
+
+          <!-- Project 01 -->
+          <article class="project-slide" data-project-id="1">
+            <div class="project-media-wrap">
+              <div class="project-img-inner">
+                <img src="assets/images/project-1-stillwater.jpg"
+                  alt="The Stillwater Residence lakeside architectural villa" class="project-img">
+              </div>
+              <div class="project-badge">COMPLETED 2024</div>
+            </div>
+            <div class="project-meta-wrap">
+              <div class="project-top-row">
+                <span class="project-number">01</span>
+                <span class="project-cat">RESIDENTIAL MONOGRAPH</span>
+              </div>
+              <h3 class="project-name">The Stillwater Residence</h3>
+              <p class="project-location">Lake Tahoe, California</p>
+              <p class="project-summary">
+                A series of low-slung blackened timber and granite pavilions hovering above the water’s edge, conceived
+                to disappear into the evergreen shoreline.
+              </p>
+              <div class="project-specs">
+                <span>9,400 sq.ft</span> &bull; <span>Private Lake Frontage</span> &bull; <span>Thermal Earth
+                  Heating</span>
+              </div>
+              <button class="project-explore-btn" data-modal="projectModal" data-project="stillwater"
+                aria-label="View Stillwater Residence details">
+                <span>View Project Case Study</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-slide" data-project-id="2">
+            <div class="project-media-wrap">
+              <div class="project-img-inner">
+                <img src="assets/images/project-2-house-of-light.jpg"
+                  alt="House of Light minimalist residence with geometric volumes" class="project-img">
+              </div>
+              <div class="project-badge">COMPLETED 2023</div>
+            </div>
+            <div class="project-meta-wrap">
+              <div class="project-top-row">
+                <span class="project-number">02</span>
+                <span class="project-cat">URBAN SANCTUARY</span>
+              </div>
+              <h3 class="project-name">House of Light</h3>
+              <p class="project-location">Kyoto, Japan</p>
+              <p class="project-summary">
+                An introverted concrete sanctuary designed around central light wells and Japanese cedar lattices,
+                filtering changing daylight into meditative living quarters.
+              </p>
+              <div class="project-specs">
+                <span>5,200 sq.ft</span> &bull; <span>Inner Courtyard</span> &bull; <span>AIA International Honor</span>
+              </div>
+              <button class="project-explore-btn" data-modal="projectModal" data-project="house-of-light"
+                aria-label="View House of Light details">
+                <span>View Project Case Study</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-slide" data-project-id="3">
+            <div class="project-media-wrap">
+              <div class="project-img-inner">
+                <img src="assets/images/project-3-courtyard.jpg" alt="The Courtyard Retreat Mediterranean stone estate"
+                  class="project-img">
+              </div>
+              <div class="project-badge">COMPLETED 2024</div>
+            </div>
+            <div class="project-meta-wrap">
+              <div class="project-top-row">
+                <span class="project-number">03</span>
+                <span class="project-cat">COASTAL ESTATE</span>
+              </div>
+              <h3 class="project-name">The Courtyard Retreat</h3>
+              <p class="project-location">Mallorca, Spain</p>
+              <p class="project-summary">
+                Hand-cut dry Marés limestone walls embracing an ancient olive grove, punctuated by deep shaded porticos
+                and cool lime-plastered interior rooms.
+              </p>
+              <div class="project-specs">
+                <span>11,800 sq.ft</span> &bull; <span>Olive Grove Sanctuary</span> &bull; <span>Natural Cistern
+                  Pool</span>
+              </div>
+              <button class="project-explore-btn" data-modal="projectModal" data-project="courtyard-retreat"
+                aria-label="View Courtyard Retreat details">
+                <span>View Project Case Study</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project-slide" data-project-id="4">
+            <div class="project-media-wrap">
+              <div class="project-img-inner">
+                <img src="assets/images/project-4-horizon.jpg" alt="The Horizon Villa cantilevered cliffside residence"
+                  class="project-img">
+              </div>
+              <div class="project-badge">COMPLETED 2025</div>
+            </div>
+            <div class="project-meta-wrap">
+              <div class="project-top-row">
+                <span class="project-number">04</span>
+                <span class="project-cat">CLIFFSIDE MODERNISM</span>
+              </div>
+              <h3 class="project-name">The Horizon Villa</h3>
+              <p class="project-location">Cape Town, South Africa</p>
+              <p class="project-summary">
+                A heroic post-tensioned concrete volume projecting 14 meters over the Atlantic surf, with fully
+                retractable glass envelopes creating an unobstructed ocean panorama.
+              </p>
+              <div class="project-specs">
+                <span>14,600 sq.ft</span> &bull; <span>Cantilevered Infinity Pool</span> &bull; <span>Off-Grid Solar
+                  Integration</span>
+              </div>
+              <button class="project-explore-btn" data-modal="projectModal" data-project="horizon-villa"
+                aria-label="View Horizon Villa details">
+                <span>View Project Case Study</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Horizontal Scroll Progress Indicator -->
+      <div class="gallery-progress-bar container">
+        <div class="gallery-progress-track">
+          <div class="gallery-progress-thumb" id="galleryProgressThumb"></div>
+        </div>
+        <div class="gallery-counter">
+          <span id="galleryCurrent">01</span> / <span id="galleryTotal">04</span>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ================================================================= -->
+    <!-- 9. INTERIOR DESIGN SECTION -->
+    <!-- ================================================================= -->
+    <section class="interiors-section" id="interiors" aria-label="Interior Design & Materiality">
+      <div class="container">
+        <div class="interiors-editorial-header">
+          <div class="interiors-title-col">
+            <span class="section-eyebrow gold-accent">INTERIOR ARCHITECTURE</span>
+            <h2 class="interiors-headline">Less, but meaningful.</h2>
+          </div>
+          <div class="interiors-desc-col">
+            <p>
+              Interior design at ATELIER is not decoration applied after the fact. It is the continuation of
+              architectural volume inward. We select honest, tactile materials that engage the human senses—natural
+              light pouring over bush-hammered limestone, the subtle scent of smoked oak, and the gentle drape of raw
+              Belgian linen.
+            </p>
+          </div>
+        </div>
+
+        <!-- Full-Width Atmospheric Interior Visual -->
+        <div class="interior-hero-visual parallax-box">
+          <div class="image-wrapper">
+            <img src="assets/images/interior-hero.jpg"
+              alt="Minimalist luxury living room with bespoke furniture, fluted timber and floor-to-ceiling glass"
+              class="parallax-img" data-speed="0.12">
+          </div>
+          <div class="interior-visual-card">
+            <span class="card-quote">“Simplicity is not a lack of clutter, but a mastery of proportion.”</span>
+            <span class="card-author">— ATELIER Materiality Thesis</span>
+          </div>
+        </div>
+
+        <!-- Interactive Material Palette Study -->
+        <div class="material-study-section">
+          <div class="materials-header">
+            <h3 class="materials-title">The Tactile Palette</h3>
+            <p class="materials-intro">Touch, light reflection, and natural aging determine every material in our
+              specification library.</p>
+          </div>
+
+          <div class="materials-grid">
+            <!-- Material 1 -->
+            <div class="material-card active" data-material="stone">
+              <div class="material-img-wrap">
+                <img src="assets/images/material-stone.jpg" alt="Natural Bush-Hammered Travertine Stone texture">
+              </div>
+              <div class="material-meta">
+                <span class="material-num">01</span>
+                <h4 class="material-name">Roman Travertine</h4>
+                <p class="material-desc">Warm honey-hued sedimentary stone with soft cross-cut veining. Naturally cool
+                  underfoot and endlessly durable.</p>
+              </div>
+            </div>
+
+            <!-- Material 2 -->
+            <div class="material-card" data-material="oak">
+              <div class="material-img-wrap">
+                <img src="assets/images/material-oak.jpg" alt="Smoked European Oak grain texture">
+              </div>
+              <div class="material-meta">
+                <span class="material-num">02</span>
+                <h4 class="material-name">Smoked European Oak</h4>
+                <p class="material-desc">Slow-fumed continuous rift-sawn oak finished with natural plant oils for deep,
+                  matte warmth without synthetic gloss.</p>
+              </div>
+            </div>
+
+            <!-- Material 3 -->
+            <div class="material-card" data-material="linen">
+              <div class="material-img-wrap">
+                <img src="assets/images/material-linen.jpg" alt="Raw Belgian Linen fabric weave">
+              </div>
+              <div class="material-meta">
+                <span class="material-num">03</span>
+                <h4 class="material-name">Raw Belgian Linen</h4>
+                <p class="material-desc">Unbleached heavyweight flax woven by heritage mills in Flanders, filtering
+                  sharp sun into diffuse ambient luminescence.</p>
+              </div>
+            </div>
+
+            <!-- Material 4 -->
+            <div class="material-card" data-material="bronze">
+              <div class="material-img-wrap">
+                <img src="assets/images/interior-detail-2.jpg" alt="Architectural Cast Bronze and Fluted Glass detail">
+              </div>
+              <div class="material-meta">
+                <span class="material-num">04</span>
+                <h4 class="material-name">Cast Bronze & Glass</h4>
+                <p class="material-desc">Hand-finished gunmetal bronze door hardware and fluted architectural partitions
+                  that create subtle acoustic dampening.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 10. STUDIO SECTION & STATS -->
+    <!-- ================================================================= -->
+    <section class="studio-section light-theme" id="studio" aria-label="About the Studio Practice">
+      <div class="container">
+        <div class="studio-intro-grid">
+          <div class="studio-copy-col">
+            <span class="section-eyebrow">OUR PRACTICE & ETHOS</span>
+            <h2 class="studio-headline">
+              Good design starts with listening.
+            </h2>
+            <p class="lead-paragraph">
+              We collaborate with discerning clients who seek homes of enduring character rather than fleeting
+              architectural fashions. Every design emerges from an intimate dialogue with the client’s daily rituals,
+              the micro-climate, and the topography.
+            </p>
+            <p class="body-paragraph">
+              Operating studios in Zurich and New York, our international team brings together registered architects,
+              interior designers, landscape masters, and structural specialists under one unified vision.
+            </p>
+
+            <!-- Studio Process Steps -->
+            <div class="studio-process">
+              <div class="process-step">
+                <span class="p-step-num">01</span>
+                <div class="p-step-text">
+                  <h4>Listen & Envision</h4>
+                  <p>Site immersion, solar analysis, topographic profiling, and in-depth lifestyle discovery.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <span class="p-step-num">02</span>
+                <div class="p-step-text">
+                  <h4>Form & Materiality</h4>
+                  <p>Hand sketches, 3D parametric iterations, material sampling, and acoustic modeling.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <span class="p-step-num">03</span>
+                <div class="p-step-text">
+                  <h4>Technical Precision</h4>
+                  <p>Comprehensive engineering coordination, sustainable envelope detailing, and BIM modeling.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <span class="p-step-num">04</span>
+                <div class="p-step-text">
+                  <h4>Living Craft</h4>
+                  <p>Rigorous on-site artisan supervision, custom furniture curation, and seamless handover.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Studio Imagery -->
+          <div class="studio-image-col">
+            <div class="studio-img-card parallax-box">
+              <img src="assets/images/studio-architect.jpg"
+                alt="Architect examining blueprints and tactile stone samples at ATELIER studio" class="parallax-img"
+                data-speed="0.1">
+              <div class="studio-img-caption">
+                <span class="founder-name">ATELIER Studio & Workshop</span>
+                <span class="founder-role">Principals & Master Craftsmen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated Statistics Strip -->
+        <div class="stats-strip" id="statsStrip">
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-num" data-target="18">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Years of Dedicated Practice</span>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-num" data-target="140">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Built Residential Works</span>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-num" data-target="14">0</span>
+              <span class="stat-suffix"></span>
+            </div>
+            <span class="stat-label">International Architecture Citations</span>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-num" data-target="6">0</span>
+              <span class="stat-suffix"></span>
+            </div>
+            <span class="stat-label">Disciplines from Concept to Furniture</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 11. CONTACT SECTION -->
+    <!-- ================================================================= -->
+    <section class="contact-section" id="contact" aria-label="Contact and Consultation Inquiry">
+      <div class="container">
+        <div class="contact-header">
+          <span class="section-eyebrow gold-accent">BEGIN A CONVERSATION</span>
+          <h2 class="contact-headline">Have a place in mind?</h2>
+          <p class="contact-subhead">
+            Tell us about your land, vision, and timeline. We accept a limited number of private residential commissions
+            each year to guarantee direct principal involvement.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Consultation Form -->
+          <div class="contact-form-col">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="clientName">Your Name <span class="req">*</span></label>
+                  <input type="text" id="clientName" name="name" required placeholder="Elena Rostova"
+                    class="form-input">
+                  <span class="form-error" id="nameError">Please enter your full name</span>
+                </div>
+                <div class="form-group">
+                  <label for="clientEmail">Email Address <span class="req">*</span></label>
+                  <input type="email" id="clientEmail" name="email" required placeholder="elena@example.com"
+                    class="form-input">
+                  <span class="form-error" id="emailError">Please enter a valid email address</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="projectType">Commission Type</label>
+                  <div class="select-wrapper">
+                    <select id="projectType" name="projectType" class="form-select">
+                      <option value="Private Villa">Private Architectural Villa</option>
+                      <option value="Coastal Estate">Coastal Estate / Retreat</option>
+                      <option value="Interior Architecture">Holistic Interior Architecture</option>
+                      <option value="Cultural Monograph">Cultural / Commercial Project</option>
+                      <option value="Adaptive Reuse">Heritage Restoration & Addition</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="projectLocation">Site Location</label>
+                  <input type="text" id="projectLocation" name="location" placeholder="e.g. Zurich, St. Moritz, Aspen"
+                    class="form-input">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="projectMessage">Vision & Site Details <span class="req">*</span></label>
+                <textarea id="projectMessage" name="message" rows="4" required
+                  placeholder="Describe your site, desired square footage, architectural aspirations, and anticipated timeline..."
+                  class="form-textarea"></textarea>
+                <span class="form-error" id="messageError">Please share a brief description of your project</span>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-submit" id="submitContactBtn">
+                  <span>Send Project Inquiry</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+                <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Studio Locations & Contacts -->
+          <div class="contact-info-col">
+            <div class="info-card">
+              <span class="info-label">Direct Communication</span>
+              <a href="mailto:inquiries@atelier-architects.com" class="info-link email-link">
+                <span>inquiries@atelier-architects.com</span>
+                <button type="button" class="btn-copy" id="btnCopyEmail" title="Copy email address to clipboard"
+                  aria-label="Copy email address">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </a>
+              <span class="copy-alert" id="copyAlert">Copied to clipboard</span>
+              <p class="info-phone">+41 44 289 1400 &bull; Central Desk</p>
+            </div>
+
+            <div class="info-card">
+              <span class="info-label">Studios & Ateliers</span>
+              <div class="studios-list">
+                <div class="studio-item">
+                  <h5>Zurich Atelier</h5>
+                  <p>Neugasse 29, 8005 Zürich, Switzerland</p>
+                </div>
+                <div class="studio-item">
+                  <h5>New York Atelier</h5>
+                  <p>448 West 19th Street, New York, NY 10011</p>
+                </div>
+                <div class="studio-item">
+                  <h5>Kyoto Research Studio</h5>
+                  <p>Kamigyo Ward, Kyoto 602-0001, Japan</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <span class="info-label">Press & Monograph Archives</span>
+              <div class="social-links">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                  class="social-link">Instagram</a>
+                <span class="sep">&bull;</span>
+                <a href="https://archdaily.com" target="_blank" rel="noopener noreferrer"
+                  class="social-link">ArchDaily</a>
+                <span class="sep">&bull;</span>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                  class="social-link">LinkedIn</a>
+                <span class="sep">&bull;</span>
+                <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-link">Behance</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================================= -->
+  <!-- FOOTER -->
+  <!-- ================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">ATELIER</span>
+          <span class="footer-tagline">ARCHITECTURE & INTERIORS</span>
+          <p class="footer-statement">Timeless architectural volumes sculpted with quiet luxury and sensory restraint.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="footer-heading">NAVIGATION</span>
+          <ul class="footer-links">
+            <li><a href="#hero">Overview</a></li>
+            <li><a href="#about">Philosophy</a></li>
+            <li><a href="#projects">Monographs</a></li>
+            <li><a href="#interactive-3d">3D Villa</a></li>
+            <li><a href="#interiors">Interiors</a></li>
+            <li><a href="#studio">Studio</a></li>
+            <li><a href="#contact">Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="footer-heading">MONOGRAPHS</span>
+          <ul class="footer-links">
+            <li><a href="#projects">The Stillwater Residence</a></li>
+            <li><a href="#projects">House of Light</a></li>
+            <li><a href="#projects">The Courtyard Retreat</a></li>
+            <li><a href="#projects">The Horizon Villa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-back-to-top">
+          <a href="#hero" class="btn-top" id="btnBackToTop" aria-label="Return to top of page">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+            <span>Back to Top</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 ATELIER Architecture & Interiors SA. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#privacyModal" class="legal-link" id="legalPrivacyLink">Privacy Policy</a>
+          <span class="sep">&bull;</span>
+          <a href="#termsModal" class="legal-link" id="legalTermsLink">Terms of Practice</a>
+          <span class="sep">&bull;</span>
+          <span class="tech-credit">Curated with GSAP, ScrollTrigger & Three.js</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================================================================= -->
+  <!-- PROJECT CASE STUDY MODAL DIALOG -->
+  <!-- ================================================================= -->
+  <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
+    aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close project modal">&times;</button>
+      <div class="modal-content" id="modalContent">
+        <!-- Injected via JavaScript from project data store -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CDN Dependencies: GSAP, ScrollTrigger, Three.js, OrbitControls, GLTFLoader -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+  <!-- Application Modules -->
+  <script src="js/animations.js"></script>
+  <script src="js/scene3d.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
